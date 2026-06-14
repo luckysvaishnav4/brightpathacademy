@@ -1,0 +1,2 @@
+# brightpathacademy
+A School Website
