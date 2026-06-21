@@ -1,0 +1,65 @@
+@media (max-width: 991.98px) {
+  .site-navbar > .container { flex-wrap: wrap; }
+  .navbar-brand { min-width: 0; }
+  .nav-actions { margin-left: auto; }
+  .navbar-collapse { flex-basis: 100%; order: 3; }
+  .navbar-collapse {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: .85rem;
+    box-shadow: 0 .75rem 2rem var(--shadow-color);
+    margin-top: .75rem;
+    padding: .75rem;
+  }
+  .navbar-collapse.show {
+    max-height: calc(100vh - 4.5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .navbar-nav { gap: .25rem; }
+  .nav-link { padding: .7rem .9rem; }
+  .nav-link::after { display: none; }
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    background: transparent;
+    color: var(--primary-color);
+    border-left: .2rem solid var(--secondary-color);
+    padding-left: .7rem;
+  }
+  .mega-menu { position: static; box-shadow: none; padding: 1rem; border-radius: .75rem; background: var(--surface-bg); }
+  .section { padding: 4rem 0; }
+  .rounded-media { min-height: 300px; }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse { order: 2; }
+  .nav-actions { order: 3; }
+  .navbar-nav { align-items: center; }
+}
+
+@media (max-width: 767.98px) {
+  .home-hero, .home-hero .carousel-item, .home-hero img { min-height: 680px; height: 680px; }
+  .carousel-caption { left: 5%; right: 5%; }
+  .carousel-caption h1, .page-hero h1, .not-found h1 { font-size: 2.55rem; }
+  .carousel-caption p, .page-hero p { font-size: 1rem; }
+  .hero-buttons .btn { width: 100%; }
+  .page-hero { min-height: 430px; padding: 7rem 0 3rem; }
+  .gallery-item img, .image-card img, .faculty-card img { height: 210px; }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand { padding: 0; border-radius: 0; }
+  .brand-logo { width: 8.2rem; height: 3.8rem; }
+  .section { padding: 3.25rem 0; }
+  .section-title { margin-bottom: 2rem; }
+  .content-panel, .form-panel, .download-card, .career-card, .testimonial-card, .article-content { padding: 1.15rem; }
+  .site-footer { padding-top: 2.5rem; }
+  .site-footer .row { --bs-gutter-y: 1rem; }
+  .site-footer h2 { margin-bottom: .45rem; }
+  .site-footer a { margin: .18rem 0; }
+  .site-footer .newsletter-form { margin-top: .5rem; }
+  .footer-copy { margin: .75rem 0; }
+  .footer-contact { display: grid; gap: .45rem; }
+  .footer-bottom { display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 1.25rem; padding-top: .85rem; }
+  .footer-legal { justify-content: center; width: 100%; }
+}

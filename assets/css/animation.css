@@ -1,0 +1,7 @@
+.card, .btn, .theme-toggle, .back-to-top, .download-card, .career-card, .testimonial-card {
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+.btn:hover, .theme-toggle:hover, .back-to-top:hover { transform: translateY(-.12rem); }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
